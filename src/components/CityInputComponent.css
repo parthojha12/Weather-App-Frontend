@@ -13,3 +13,24 @@
 .button-container {
   width: 20%;
 }
+
+@media screen and (max-width: 768px) {
+  .cityAddSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-container {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    width: 80%;
+  }
+
+  .input-container input,
+  .button-container button {
+    width: 100%;
+  }
+}
