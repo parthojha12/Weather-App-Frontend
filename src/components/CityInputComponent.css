@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.input-container {
+  width: 25%;
+}
+
+.input-container input {
+  width: 80%;
+}
+
+.button-container {
+  width: 20%;
+}

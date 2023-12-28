@@ -2,37 +2,138 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #b5d8ff;
+  height: 100vh;
+  gap: 0;
+  border-radius: 10px;
+  padding: 15vh;
+}
+
+.left-container {
+  flex: 25%;
+  background-color: #5c9ce5;
+  border-radius: 3vw;
+  padding: 10px;
+}
+
+.right-container {
+  flex: 75%;
+  background-color: #e3f1ff;
+  border-radius: 3vw;
+  padding: 20px 40px;
+}
+
+.weather-details-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container {
+  padding: 0 20px 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  flex: 0 0 calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.temperature {
+  font-size: 4vw;
+  font-weight: bold; 
+  color: #333;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.city-info h2 {
+  font-size: 2vw;
+  font-weight: bold; 
+  color: #333;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.city-image {
+  height: 50vh;
+  width: 18vw;
+  padding: 3px;
+  margin-top: 20px;
+  border-radius: 3vw;
+}
+
+.cityAddSection {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 2vh;
+}
+
+.city-change-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh;
+  gap: 2vw;
+}
+
+.btn {
+  border-radius: 0.5vw;
+  border-color: transparent;
+  background-color: white;
+  height: 4vh;;
+}
+
+.btn:hover {
+  background-color: #b5d8ff ;
+  color: black;
+}
+
+.btn-records{
+  border-radius: 0.5vw;
+  border-color: transparent;
+  background-color: white;
+  height: 5vh;;
+}
+
+.btn-records:hover {
+  background-color: #5c9ce5 ;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.records-font h4 {
+  font: 200;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show-records{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
