@@ -28,4 +28,22 @@
     font-size: 18px;
     margin-top: 10px;
   }
+
+@media screen and (max-width: 768px) {
+    .container {
+      overflow-x: auto;
+    }
+  
+    .horizontal-scroll {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 5px;
+    }
+  
+    .card {
+      width: 80vw;
+      margin-right: 10px;
+    }
+  }
   
